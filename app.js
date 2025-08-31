@@ -6,12 +6,12 @@ app.use(express.json());
 
 app.post('/command', (req, res) => {
   const command = req.body.command;
-  console.log(`Empfangener Befehl: ${command}`);
-  // Hier können Sie die Logik zur Befehlsverarbeitung hinzufügen
-  res.send(`Befehl ${command} verarbeitet.`);
+  console.log(`Received command: ${command}`);
+  // Here you can add the command processing logic
+  res.send(`Command ${command} processed.`);
 });
 
 app.listen(3000, () => {
-  console.log('Server läuft auf Port 3000');
+  console.log('Server running on port 3000');
   startRecognition();
 });
