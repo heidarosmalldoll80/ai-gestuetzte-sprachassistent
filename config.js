@@ -1,6 +1,6 @@
 module.exports = {
   language: 'de-DE',
-  apiKey: 'YOUR_API_KEY_HERE',
+  apiKey: 'REPLACE_WITH_YOUR_API_KEY',
   supportedApps: [
     'calendar',
     'email',
