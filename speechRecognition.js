@@ -2,13 +2,13 @@ const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecogni
 const recognition = new SpeechRecognition();
 
 recognition.onstart = () => {
-  console.log('Spracherkennung gestartet.');
+  console.log('Speech recognition started.');
 };
 
 recognition.onresult = (event) => {
   const transcript = event.results[0][0].transcript;
-  console.log(`Erkannte Sprache: ${transcript}`);
-  // Hier können Sie die Logik zur Verarbeitung der Sprache hinzufügen
+  console.log(`Recognized speech: ${transcript}`);
+  // Add logic for processing the speech here
 };
 
 function startRecognition() {
