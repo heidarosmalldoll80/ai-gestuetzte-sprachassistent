@@ -8,7 +8,7 @@ app.post('/command', (req, res) => {
   const command = req.body.command;
   console.log(`Received command: ${command}`);
   // Here you can add the command processing logic
-  res.send(`Command ${command} processed.`);
+  res.status(200).send(`Command ${command} processed.`);
 });
 
 app.listen(3000, () => {
