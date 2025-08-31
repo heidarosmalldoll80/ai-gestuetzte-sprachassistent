@@ -1,0 +1,17 @@
+{
+  "name": "ai-gestuetzte-sprachassistent",
+  "version": "1.0.0",
+  "description": "Ein KI-gestützter Sprachassistent für verschiedene Anwendungen",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "@speechly/browser-client": "^0.14.0",
+    "axios": "^0.21.1"
+  },
+  "author": "Ihr Name",
+  "license": "MIT"
+}
