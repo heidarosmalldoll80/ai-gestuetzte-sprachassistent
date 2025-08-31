@@ -11,6 +11,10 @@ recognition.onresult = (event) => {
   // Add logic for processing the speech here
 };
 
+recognition.onerror = (event) => {
+  console.error(`Speech recognition error detected: ${event.error}`);
+};
+
 function startRecognition() {
   recognition.start();
 }
